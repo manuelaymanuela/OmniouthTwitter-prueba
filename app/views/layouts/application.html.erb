@@ -15,7 +15,8 @@
     <%= image_tag(current_user.image, size: 48) %><br />
     <%= link_to "Sign out", signout_path, id: "sign_out" %>
   <% else %>
-    <%= link_to "Sign in with Twitter", "/auth/twitter", id: "sign_in" %>
+    <%= link_to "Sign in with Twitter", "/auth/twitter", id: "sign_in" %><br />
+    <%= link_to "Sign in with Github", "/auth/github" %>
   <% end %>
 </div>
     <%= yield %>
