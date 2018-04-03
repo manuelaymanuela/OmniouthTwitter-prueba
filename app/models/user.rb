@@ -8,4 +8,13 @@ class User < ActiveRecord::Base
         user.image = auth["info"]["image"]
         end
     end
+# el siguiente código obtiene el avatar de los usuarios desde facebook:
+
+def largeimage
+    "http://graph.facebook.com/#{self.uid}/picture?type=large"
+  end
+  
+  def normalimage
+    "http://graph.facebook.com/#{self.uid}/picture?type=normal"
+  end
 end

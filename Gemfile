@@ -57,3 +57,5 @@ gem 'omniauth-twitter', '~> 1.4'
 gem 'figaro'
 
 gem 'omniauth-github'
+
+gem 'omniauth-facebook'
